@@ -24,7 +24,7 @@ public class GamePlay extends javax.swing.JFrame {
     int fakecard = 30; // test card
 
     //Lifepoint Properties
-    int lifePoint = 1000;
+    int lifePoint = 100;
     int t1LoserLP = 100;
     int t2LoserLP = 200;
     int t3LoserLP = 300;
@@ -179,7 +179,7 @@ public class GamePlay extends javax.swing.JFrame {
 //            }
 //        }
 //        loseState();
-        String opponentChoice = "r1";
+        String opponentChoice = "r3";
         String playChoice = stringChoice();
         
         if(playChoice.equals(opponentChoice))
@@ -615,6 +615,8 @@ public class GamePlay extends javax.swing.JFrame {
         
         }
         
+        loseState();
+        
         
     }
     
@@ -654,7 +656,7 @@ public class GamePlay extends javax.swing.JFrame {
     
     //lose 
     private void loseState(){
-        if(lifePoint == 0)
+        if(lifePoint <= 0)
         {
             Status.setText("YOUR LIFEPOINTS IS ZERO");
             turndraw = 3;
@@ -726,7 +728,7 @@ public class GamePlay extends javax.swing.JFrame {
         lifebar1 -= (loserLP/4) -10;
         battlogP1.append("Player 2 WIN || [" + lifePoint + "-" + loserLP + "] \n");
         PlayerLifePoints.setSize(lifebar1,30); //lifebar width
-        battlogP2.append("Player WIN");
+        battlogP2.append("Player WIN \n");
     }
     
     //battle log opponent
