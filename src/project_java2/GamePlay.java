@@ -25,7 +25,11 @@ public class GamePlay extends javax.swing.JFrame {
 
     //Lifepoint Properties
     int lifePoint = 1000;
-    int loserLP = 200;
+    int t1LoserLP = 100;
+    int t2LoserLP = 200;
+    int t3LoserLP = 300;
+    int jokLoserLP = 500;
+    int pipLoserLP = 250;
     int lifebar1 = 270;
     
     //Deck Properties
@@ -167,7 +171,7 @@ public class GamePlay extends javax.swing.JFrame {
 //            }
 //        }
 //        loseState();
-        String opponentChoice = "s1";
+        String opponentChoice = "r2";
         String playChoice = stringChoice();
         
         if(playChoice.equals(opponentChoice))
@@ -183,8 +187,14 @@ public class GamePlay extends javax.swing.JFrame {
             //r1 lose
             else if(playChoice == "r1" && opponentChoice == "p1"){
                 Status.setText("You Lose!");
+                battleLogLose(t1LoserLP);
+                lifePoint -= t1LoserLP;
+                lifePoints();
             }else if(playChoice == "r1" && opponentChoice == "r2"){
                 Status.setText("You Lose!");
+                battleLogLose(t2LoserLP);
+                lifePoint -= t2LoserLP;
+                lifePoints();
             }else if(playChoice == "r1" && opponentChoice == "p2"){
                 Status.setText("You Lose!");
             }else if(playChoice == "r1" && opponentChoice == "s2"){
@@ -539,7 +549,7 @@ public class GamePlay extends javax.swing.JFrame {
     }
     
     //battle log
-    private void battleLogLose(){
+    private void battleLogLose(int loserLP){
         //battleLogPlayer1
         lifebar1 -= 54;
         battlogP1.append("Player 2 WIN || [" + lifePoint + "-" + loserLP + "] \n");
