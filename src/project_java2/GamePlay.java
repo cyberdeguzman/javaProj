@@ -158,7 +158,8 @@ public class GamePlay extends javax.swing.JFrame {
         Hand4.setForeground(Color.BLACK);
         Hand5.setForeground(Color.BLACK);
         
-        playHand.setText(String.valueOf(playVal));
+        String pickCard = stringChoice();
+        playHand.setText(String.valueOf(pickCard));
     }
     
     //play cards
@@ -856,6 +857,7 @@ public class GamePlay extends javax.swing.JFrame {
                    cardH = "Pip";
                }  
             }
+            
         //}
         return cardH;
     }
