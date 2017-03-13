@@ -25,8 +25,10 @@ public class GamePlay extends javax.swing.JFrame {
 
     //Lifepoint Properties
     int lifePoint = 1000;
+    int lifePointOpponent = 1000;
     int loserLP = 200;
     int lifebar1 = 270;
+    int lifebar2 = 270;
     
     //Deck Properties
     public int [] deck = new int [32]; 
@@ -544,6 +546,12 @@ public class GamePlay extends javax.swing.JFrame {
         lifebar1 -= 54;
         battlogP1.append("Player 2 WIN || [" + lifePoint + "-" + loserLP + "] \n");
         PlayerLifePoints.setSize(lifebar1,30); //lifebar width
+        battlogP2.append("Player WIN");
+    }
+    
+    //battle log opponent
+    private void battleLogWin(){
+        battlogP1.append("Player WIN!!");
     }
 
     /**
@@ -580,8 +588,8 @@ public class GamePlay extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         battlogP1 = new javax.swing.JTextArea();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jTextArea2 = new javax.swing.JTextArea();
-        jLabel4 = new javax.swing.JLabel();
+        battlogP2 = new javax.swing.JTextArea();
+        EnemyLifePoints = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -808,18 +816,18 @@ public class GamePlay extends javax.swing.JFrame {
         getContentPane().add(jScrollPane1);
         jScrollPane1.setBounds(720, 490, 270, 96);
 
-        jTextArea2.setColumns(20);
-        jTextArea2.setRows(5);
-        jScrollPane2.setViewportView(jTextArea2);
+        battlogP2.setColumns(20);
+        battlogP2.setRows(5);
+        jScrollPane2.setViewportView(battlogP2);
 
         getContentPane().add(jScrollPane2);
         jScrollPane2.setBounds(10, 50, 270, 96);
 
-        jLabel4.setBackground(new java.awt.Color(153, 255, 255));
-        jLabel4.setText("Player LIFEPOINTS");
-        jLabel4.setOpaque(true);
-        getContentPane().add(jLabel4);
-        jLabel4.setBounds(10, 10, 270, 30);
+        EnemyLifePoints.setBackground(new java.awt.Color(153, 255, 255));
+        EnemyLifePoints.setText("Player LIFEPOINTS");
+        EnemyLifePoints.setOpaque(true);
+        getContentPane().add(EnemyLifePoints);
+        EnemyLifePoints.setBounds(10, 10, 270, 30);
 
         jLabel3.setBackground(new java.awt.Color(255, 51, 0));
         jLabel3.setText("DISCONNECT");
@@ -1005,6 +1013,7 @@ public class GamePlay extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Deck;
     private javax.swing.JLabel Deck1;
+    private javax.swing.JLabel EnemyLifePoints;
     private javax.swing.JTextField Error_Val;
     private javax.swing.JLabel Hand1;
     private javax.swing.JLabel Hand10;
@@ -1019,15 +1028,14 @@ public class GamePlay extends javax.swing.JFrame {
     private javax.swing.JLabel PlayerLifePoints;
     private javax.swing.JTextField Status;
     private javax.swing.JTextArea battlogP1;
+    private javax.swing.JTextArea battlogP2;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTextArea jTextArea2;
     private javax.swing.JLabel playHand;
     private javax.swing.JLabel playHand1;
     private javax.swing.JTextField status2;
