@@ -152,22 +152,327 @@ public class GamePlay extends javax.swing.JFrame {
     //play cards
     private void play()
     {
-        if(playVal != 60){
-            if(fakecard > playVal)
-            {
-            Status.setText("You lost");            
-            battleLogLose();
-            lifePoint -= loserLP;
-            lifePoints();
-            
-            }
-            else
-            {
-            Status.setText("You win");
-            }
-        }
-        loseState();
+//        if(playVal != 60){
+//            if(fakecard > playVal)
+//            {
+//            Status.setText("You lost");            
+//            battleLogLose();
+//            lifePoint -= loserLP;
+//            lifePoints();
+//            
+//            }
+//            else
+//            {
+//            Status.setText("You win");
+//            }
+//        }
+//        loseState();
+        String opponentChoice = "s1";
+        String playChoice = stringChoice();
         
+        if(playChoice.equals(opponentChoice))
+        {
+            Status.setText("It's a tie!!");
+        }
+        else if(!playChoice.equals(opponentChoice))
+        {
+            //r1 win
+            if(playChoice == "r1" && opponentChoice == "s1"){
+                Status.setText("You Win!");
+            }
+            //r1 lose
+            else if(playChoice == "r1" && opponentChoice == "p1"){
+                Status.setText("You Lose!");
+            }else if(playChoice == "r1" && opponentChoice == "r2"){
+                Status.setText("You Lose!");
+            }else if(playChoice == "r1" && opponentChoice == "p2"){
+                Status.setText("You Lose!");
+            }else if(playChoice == "r1" && opponentChoice == "s2"){
+                Status.setText("You Lose!");
+            }else if(playChoice == "r1" && opponentChoice == "r3"){
+                Status.setText("You Lose!");
+            }else if(playChoice == "r1" && opponentChoice == "p3"){
+                Status.setText("You Lose!");
+            }else if(playChoice == "r1" && opponentChoice == "s3"){
+                Status.setText("You Lose!");
+            }else if(playChoice == "r1" && opponentChoice == "pip"){
+                Status.setText("You Lose!");
+            }
+            
+            //p1 win
+            else if(playChoice == "p1" && opponentChoice == "r1"){
+                Status.setText("You Win!");
+            }
+            //p1 lose
+            else if(playChoice == "p1" && opponentChoice == "s1"){
+                Status.setText("You Lose!");
+            }else if(playChoice == "p1" && opponentChoice == "r2"){
+                Status.setText("You Lose!");
+            }else if(playChoice == "p1" && opponentChoice == "p2"){
+                Status.setText("You Lose!");
+            }else if(playChoice == "p1" && opponentChoice == "s2"){
+                Status.setText("You Lose!");
+            }else if(playChoice == "p1" && opponentChoice == "r3"){
+                Status.setText("You Lose!");
+            }else if(playChoice == "p1" && opponentChoice == "p3"){
+                Status.setText("You Lose!");
+            }else if(playChoice == "p1" && opponentChoice == "s3"){
+                Status.setText("You Lose!");
+            }else if(playChoice == "p1" && opponentChoice == "pip"){
+                Status.setText("You Lose!");
+            }
+            
+            //s1 win
+            else if(playChoice == "s1" && opponentChoice == "p1"){
+                Status.setText("You Win!");
+            }
+            //s1 lose
+            else if(playChoice == "s1" && opponentChoice == "r1"){
+                Status.setText("You Lose!");
+            }else if(playChoice == "s1" && opponentChoice == "r2"){
+                Status.setText("You Lose!");
+            }else if(playChoice == "s1" && opponentChoice == "p2"){
+                Status.setText("You Lose!");
+            }else if(playChoice == "s1" && opponentChoice == "s2"){
+                Status.setText("You Lose!");
+            }else if(playChoice == "s1" && opponentChoice == "r3"){
+                Status.setText("You Lose!");
+            }else if(playChoice == "s1" && opponentChoice == "p3"){
+                Status.setText("You Lose!");
+            }else if(playChoice == "s1" && opponentChoice == "s3"){
+                Status.setText("You Lose!");
+            }else if(playChoice == "s1" && opponentChoice == "pip"){
+                Status.setText("You Lose!");
+            }
+            
+            //r2 win
+            else if(playChoice == "r2" && opponentChoice == "r1"){
+                Status.setText("You Win!");
+            }else if(playChoice == "r2" && opponentChoice == "s1"){
+                Status.setText("You Win!");
+            }else if(playChoice == "r2" && opponentChoice == "p1"){
+                Status.setText("You Win!");
+            }else if(playChoice == "r2" && opponentChoice == "s2"){
+                Status.setText("You Win!");
+            }
+            //r2 lose
+            else if(playChoice == "r2" && opponentChoice == "p2"){
+                Status.setText("You Lose!");
+            }else if(playChoice == "r2" && opponentChoice == "r3"){
+                Status.setText("You Lose!");
+            }else if(playChoice == "r2" && opponentChoice == "p3"){
+                Status.setText("You Lose!");
+            }else if(playChoice == "r2" && opponentChoice == "s3"){
+                Status.setText("You Lose!");
+            }else if(playChoice == "r2" && opponentChoice == "jok"){
+                Status.setText("You Lose!");
+            }
+            
+            //p2 win 
+            else if(playChoice == "p2" && opponentChoice == "r1"){
+                Status.setText("You Win!");
+            }else if(playChoice == "p2" && opponentChoice == "s1"){
+                Status.setText("You Win!");
+            }else if(playChoice == "p2" && opponentChoice == "p1"){
+                Status.setText("You Win!");
+            }else if(playChoice == "p2" && opponentChoice == "r2"){
+                Status.setText("You Win!");
+            }
+            //p2 lose
+            else if(playChoice == "p2" && opponentChoice == "s2"){
+                Status.setText("You Lose!");
+            }else if(playChoice == "p2" && opponentChoice == "r3"){
+                Status.setText("You Lose!");
+            }else if(playChoice == "p2" && opponentChoice == "p3"){
+                Status.setText("You Lose!");
+            }else if(playChoice == "p2" && opponentChoice == "s3"){
+                Status.setText("You Lose!");
+            }else if(playChoice == "p2" && opponentChoice == "jok"){
+                Status.setText("You Lose!");
+            }
+            
+            //s2 win
+            else if(playChoice == "s2" && opponentChoice == "r1"){
+                Status.setText("You Win!");
+            }else if(playChoice == "s2" && opponentChoice == "s1"){
+                Status.setText("You Win!");
+            }else if(playChoice == "s2" && opponentChoice == "p1"){
+                Status.setText("You Win!");
+            }else if(playChoice == "s2" && opponentChoice == "p2"){
+                Status.setText("You Win!");
+            }
+            //s2 lose
+            else if(playChoice == "s2" && opponentChoice == "r2"){
+                Status.setText("You Lose!");
+            }else if(playChoice == "s2" && opponentChoice == "r3"){
+                Status.setText("You Lose!");
+            }else if(playChoice == "s2" && opponentChoice == "p3"){
+                Status.setText("You Lose!");
+            }else if(playChoice == "s2" && opponentChoice == "s3"){
+                Status.setText("You Lose!");
+            }else if(playChoice == "s2" && opponentChoice == "jok"){
+                Status.setText("You Lose!");
+            }
+            
+            //r3 win
+            else if(playChoice == "r3" && opponentChoice == "s1"){
+                Status.setText("You Win!");
+            }else if(playChoice == "r3" && opponentChoice == "p1"){
+                Status.setText("You Win!");
+            }else if(playChoice == "r3" && opponentChoice == "r1"){
+                Status.setText("You Win!");
+            }else if(playChoice == "r3" && opponentChoice == "r2"){
+                Status.setText("You Win!");
+            }else if(playChoice == "r3" && opponentChoice == "p2"){
+                Status.setText("You Win!");
+            }else if(playChoice == "r3" && opponentChoice == "s2"){
+                Status.setText("You Win!");
+            }else if(playChoice == "r3" && opponentChoice == "s3"){
+                Status.setText("You Win!");
+            }
+            //r3 lose
+            else if(playChoice == "r3" && opponentChoice == "p3"){
+                Status.setText("You Lose!");
+            }else if(playChoice == "r3" && opponentChoice == "jok"){
+                Status.setText("You Lose!");
+            }
+            
+            //p3 win
+            else if(playChoice == "p3" && opponentChoice == "r1"){
+                Status.setText("You Win!");
+            }else if(playChoice == "p3" && opponentChoice == "s1"){
+                Status.setText("You Win!");
+            }else if(playChoice == "p3" && opponentChoice == "p1"){
+                Status.setText("You Win!");
+            }else if(playChoice == "p3" && opponentChoice == "r2"){
+                Status.setText("You Win!");
+            }else if(playChoice == "p3" && opponentChoice == "p2"){
+                Status.setText("You Win!");
+            }else if(playChoice == "p3" && opponentChoice == "s3"){
+                Status.setText("You Win!");
+            }else if(playChoice == "p3" && opponentChoice == "r3"){
+                Status.setText("You Win!");
+            }
+            //p3 lose
+            else if(playChoice == "p3" && opponentChoice == "s3"){
+                Status.setText("You Lose!");
+            }else if(playChoice == "p3" && opponentChoice == "jok"){
+                Status.setText("You Lose!");
+            }
+            
+            //s3 win
+            else if(playChoice == "s3" && opponentChoice == "p1"){
+                Status.setText("You Win!");
+            }else if(playChoice == "s3" && opponentChoice == "r1"){
+                Status.setText("You Win!");
+            }else if(playChoice == "s3" && opponentChoice == "s1"){
+                Status.setText("You Win!");
+            }else if(playChoice == "s3" && opponentChoice == "p2"){
+                Status.setText("You Win!");
+            }else if(playChoice == "s3" && opponentChoice == "p2"){
+                Status.setText("You Win!");
+            }else if(playChoice == "s3" && opponentChoice == "s2"){
+                Status.setText("You Win!");
+            }else if(playChoice == "s3" && opponentChoice == "p3"){
+                Status.setText("You Win!");
+            }
+            //s3 lose
+            else if(playChoice == "s3" && opponentChoice == "r3"){
+                Status.setText("You Lose!");
+            }else if(playChoice == "s3" && opponentChoice == "jok"){
+                Status.setText("You Lose!");
+            }
+            
+            //jok win
+            else if(playChoice == "jok" && opponentChoice == "s2"){
+                Status.setText("You Win!");
+            }else if(playChoice == "jok" && opponentChoice == "p2"){
+                Status.setText("You Win!");
+            }else if(playChoice == "jok" && opponentChoice == "r2"){
+                Status.setText("You Win!");
+            }else if(playChoice == "jok" && opponentChoice == "s3"){
+                Status.setText("You Win!");
+            }else if(playChoice == "jok" && opponentChoice == "p3"){
+                Status.setText("You Win!");
+            }else if(playChoice == "jok" && opponentChoice == "r3"){
+                Status.setText("You Win!");
+            }
+            //jok lose
+            else if(playChoice == "jok" && opponentChoice == "r1"){
+                Status.setText("You Lose!");
+            }else if(playChoice == "jok" && opponentChoice == "p1"){
+                Status.setText("You Lose!");
+            }else if(playChoice == "jok" && opponentChoice == "s1"){
+                Status.setText("You Lose!");
+            }else if(playChoice == "jok" && opponentChoice == "pip"){
+                Status.setText("You Lose!");
+            }
+            
+            //pip win
+            else if(playChoice == "pip" && opponentChoice == "s1"){
+                Status.setText("You Win!");
+            }else if(playChoice == "pip" && opponentChoice == "p1"){
+                Status.setText("You Win!");
+            }else if(playChoice == "pip" && opponentChoice == "r1"){
+                Status.setText("You Win!");
+            }else if(playChoice == "pip" && opponentChoice == "jok"){
+                Status.setText("You Win!");
+            }
+            //pip lose
+            else if(playChoice == "pip" && opponentChoice == "r2"){
+                Status.setText("You Lose!");
+            }else if(playChoice == "pip" && opponentChoice == "p2"){
+                Status.setText("You Lose!");
+            }else if(playChoice == "pip" && opponentChoice == "s2"){
+                Status.setText("You Lose!");
+            }else if(playChoice == "pip" && opponentChoice == "r3"){
+                Status.setText("You Lose!");
+            }else if(playChoice == "pip" && opponentChoice == "p3"){
+                Status.setText("You Lose!");
+            }else if(playChoice == "pip" && opponentChoice == "s3"){
+                Status.setText("You Lose!");
+            }
+            
+        
+        
+        
+        }
+        
+        
+    }
+    
+    //String representation of numbers
+    public String stringChoice(){
+        String playChoice = "";
+        String opponentChoice = "r1";
+        
+        if(playVal >= 0 && playVal <6){
+            playChoice = "p1";
+        }else if(playVal >= 6 && playVal <12){
+            playChoice = "r1";
+        }else if(playVal >= 12 && playVal <18){
+            playChoice = "s1";
+        }else if(playVal >= 18 && playVal <20){
+            playChoice = "p2";
+        }else if(playVal >= 20 && playVal <22){
+            playChoice = "r2";
+        }else if(playVal >= 23 && playVal <24){
+            playChoice = "s2";
+        }else if(playVal == 24){
+            playChoice = "p3";
+        }else if(playVal == 25){
+            playChoice = "r3";
+        }else if(playVal == 26){
+            playChoice = "s3";
+        }else if(playVal >= 27 && playVal < 30){
+            playChoice = "jok";
+        }else if(playVal >= 30 && playVal < 32){
+            playChoice = "pip";
+        }
+        
+        return playChoice;
+    
+    
     }
     
     //lose 
