@@ -34,6 +34,12 @@ public class GamePlay extends javax.swing.JFrame {
     int lifebar1 = 270;
     int lifebar2 = 270;
     
+    int t1minus = 27;
+    int t2minus = 54;
+    int t3minus = 81;
+    int jokminus = 135;
+    int pipminus = 68;
+    
     //Deck Properties
     public int [] deck = new int [32]; 
     int drawn = 0;
@@ -553,7 +559,6 @@ public class GamePlay extends javax.swing.JFrame {
     //battle log
     private void battleLogLose(int loserLP){
         //battleLogPlayer1
-        lifebar1 -= 54;
         battlogP1.append("Player 2 WIN || [" + lifePoint + "-" + "] \n");
         PlayerLifePoints.setSize(lifebar1,30); //lifebar width
         battlogP2.append("Player WIN");
@@ -561,10 +566,14 @@ public class GamePlay extends javax.swing.JFrame {
     
     //battle log opponent
     private void battleLogWin(){
-        lifebar1 -= 54;
-        battlogP2.append("Player 2 WIN || [" + lifePoint + "-" +  "] \n");
-        PlayerLifePoints.setSize(lifebar1,30); //lifebar width
+        battlogP2.append("Player 1 WIN || [" + lifePoint + "-" +  "] \n");
+        PlayerLifePoints.setSize(lifebar2,30); //lifebar width
         battlogP1.append("Player WIN");
+    }
+    
+    private void battleLogTie(){
+        battlogP1.append("ITS A TIE");
+        battlogP2.append("ITS A TIE");
     }
 
     /**
