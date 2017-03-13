@@ -713,7 +713,7 @@ public class GamePlay extends javax.swing.JFrame {
     private void battleLogLose(int loserLP){
         //battleLogPlayer1
         lifebar1 -= 54;
-        battlogP1.append("Player 2 WIN || [" + lifePoint + "-" + loserLP"] \n");
+        battlogP1.append("Player 2 WIN || [" + lifePoint + "-" + loserLP + "] \n");
         PlayerLifePoints.setSize(lifebar1,30); //lifebar width
         battlogP2.append("Player WIN");
     }
