@@ -140,17 +140,17 @@ public class GamePlay extends javax.swing.JFrame {
     
     //updates card and hand values
     private void cardvalup(){
-        String cardH = null;
+        String cardH = " ";
         status2.setText(" ");
         for (int i = 0; i < 32; i++) {
             status2.setText(status2.getText() + " " + String.valueOf(deck[i]));
         }
         
-        Hand1.setText(String.valueOf(handval[0]) + cardType(cardH));
-        Hand2.setText(String.valueOf(handval[1]) + cardType(cardH));
-        Hand3.setText(String.valueOf(handval[2]) + cardType(cardH));
-        Hand4.setText(String.valueOf(handval[3]) + cardType(cardH));
-        Hand5.setText(String.valueOf(handval[4]) + cardType(cardH));
+        Hand1.setText(String.valueOf(handval[0]) + " " + cardType(cardH, 0));
+        Hand2.setText(String.valueOf(handval[1]) + " " + cardType(cardH, 1));
+        Hand3.setText(String.valueOf(handval[2]) + " " + cardType(cardH, 2));
+        Hand4.setText(String.valueOf(handval[3]) + " " + cardType(cardH, 3));
+        Hand5.setText(String.valueOf(handval[4]) + " " + cardType(cardH, 4));
         
         Hand1.setForeground(Color.BLACK);
         Hand2.setForeground(Color.BLACK);
@@ -665,53 +665,58 @@ public class GamePlay extends javax.swing.JFrame {
     
     
     //sets card type
-    public String cardType(String cardH)
+    public String cardType(String cardH, int i)
     {
-        cardH = null;
-        for (int i = 0; i < 5; i++) {
+        //cardH = "";
+        //for (int i = 0; i < 5; i++) {
             if (handval[i] != 60)
             {
-                  if(handval[i] > 0 && handval[i] < 6)
+               if(handval[i] >= 0 && handval[i] < 6)
                {
-                   cardH = "Rock";
+                   cardH = "Paper I";
                }
-               else if(handval[i] > 5 && handval[i] < 11)
+               else if(handval[i] >= 6 && handval[i] < 12)
                {
-                   cardH = "Paper ";
+                   cardH = "Rock I";
                }
-               else if(handval[i] > 10 && handval[i] < 16)
+               else if(handval[i] >= 12 && handval[i] < 18)
                {
-                   cardH = "Scissors  ";
+                   cardH = "Scissors I";
                }
-               else if(handval[i] > 15 && handval[i] < 21)
+               else if(handval[i] >= 18 && handval[i] < 20)
                {
-                   cardH = "Spock  ";
+                   cardH = "Paper II";
                }
-               else if(handval[i] > 20 && handval[i] < 26)
+               else if(handval[i] >= 20 && handval[i] < 22)
                {
-                   cardH = "Lizard  ";
+                   cardH = "Rock II";
                }
-               else if(handval[i] > 26 && handval[i] < 31)
+               else if(handval[i] >= 22 && handval[i] < 24)
                {
-                   cardH = "fuck1  ";
-               }else if(handval[i] > 30 && handval[i] < 36)
+                   cardH = "Scissors II";
+               }
+               else if(handval[i] == 24)
                {
-                   cardH = "fuck2  ";
-               }else if(handval[i] > 35 && handval[i] < 41)
+                   cardH = "Paper III";
+               }
+               else if(handval[i] == 25)
                {
-                   cardH = "fuck3  ";
-               }else if(handval[i] > 40 && handval[i] < 46)
+                   cardH = "Rock III";
+               }
+               else if(handval[i] == 26)
                {
-                   cardH = "fuck4  ";
-               } else if(handval[i] > 45 && handval[i] < 51)
-               {
-                   cardH = "fuck5  ";
-               }else if(handval[i] > 50 && handval[i] < 53)
+                   cardH = "Scissors III";
+               }
+               else if(handval[i] >= 27 && handval[i] < 30)
                {
                    cardH = "Joker";
+               }
+               else if(handval[i] >= 30 && handval[i] < 32)
+               {
+                   cardH = "Pip";
                }  
             }
-        }
+        //}
         return cardH;
     }
     
