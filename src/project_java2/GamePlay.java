@@ -199,16 +199,34 @@ public class GamePlay extends javax.swing.JFrame {
                 lifePoints();
             }else if(playChoice == "r1" && opponentChoice == "p2"){
                 Status.setText("You Lose!");
+                battleLogLose(t2LoserLP);
+                lifePoint -= t2LoserLP;
+                lifePoints();
             }else if(playChoice == "r1" && opponentChoice == "s2"){
                 Status.setText("You Lose!");
+                battleLogLose(t2LoserLP);
+                lifePoint -= t2LoserLP;
+                lifePoints();
             }else if(playChoice == "r1" && opponentChoice == "r3"){
                 Status.setText("You Lose!");
+                battleLogLose(t3LoserLP);
+                lifePoint -= t3LoserLP;
+                lifePoints();
             }else if(playChoice == "r1" && opponentChoice == "p3"){
                 Status.setText("You Lose!");
+                battleLogLose(t3LoserLP);
+                lifePoint -= t3LoserLP;
+                lifePoints();
             }else if(playChoice == "r1" && opponentChoice == "s3"){
                 Status.setText("You Lose!");
+                battleLogLose(t3LoserLP);
+                lifePoint -= t3LoserLP;
+                lifePoints();
             }else if(playChoice == "r1" && opponentChoice == "pip"){
                 Status.setText("You Lose!");
+                battleLogLose(pipLoserLP);
+                lifePoint -= pipLoserLP;
+                lifePoints();
             }
             
             //p1 win
@@ -218,20 +236,44 @@ public class GamePlay extends javax.swing.JFrame {
             //p1 lose
             else if(playChoice == "p1" && opponentChoice == "s1"){
                 Status.setText("You Lose!");
+                battleLogLose(t1LoserLP);
+                lifePoint -= t1LoserLP;
+                lifePoints();
             }else if(playChoice == "p1" && opponentChoice == "r2"){
                 Status.setText("You Lose!");
+                battleLogLose(t2LoserLP);
+                lifePoint -= t2LoserLP;
+                lifePoints();
             }else if(playChoice == "p1" && opponentChoice == "p2"){
                 Status.setText("You Lose!");
+                battleLogLose(t2LoserLP);
+                lifePoint -= t2LoserLP;
+                lifePoints();
             }else if(playChoice == "p1" && opponentChoice == "s2"){
                 Status.setText("You Lose!");
+                battleLogLose(t2LoserLP);
+                lifePoint -= t2LoserLP;
+                lifePoints();
             }else if(playChoice == "p1" && opponentChoice == "r3"){
                 Status.setText("You Lose!");
+                battleLogLose(t3LoserLP);
+                lifePoint -= t3LoserLP;
+                lifePoints();
             }else if(playChoice == "p1" && opponentChoice == "p3"){
                 Status.setText("You Lose!");
+                battleLogLose(t3LoserLP);
+                lifePoint -= t3LoserLP;
+                lifePoints();
             }else if(playChoice == "p1" && opponentChoice == "s3"){
                 Status.setText("You Lose!");
+                battleLogLose(t3LoserLP);
+                lifePoint -= t3LoserLP;
+                lifePoints();
             }else if(playChoice == "p1" && opponentChoice == "pip"){
                 Status.setText("You Lose!");
+                battleLogLose(pipLoserLP);
+                lifePoint -= pipLoserLP;
+                lifePoints();
             }
             
             //s1 win
@@ -241,20 +283,44 @@ public class GamePlay extends javax.swing.JFrame {
             //s1 lose
             else if(playChoice == "s1" && opponentChoice == "r1"){
                 Status.setText("You Lose!");
+                battleLogLose(t1LoserLP);
+                lifePoint -= t1LoserLP;
+                lifePoints();
             }else if(playChoice == "s1" && opponentChoice == "r2"){
                 Status.setText("You Lose!");
+                battleLogLose(t2LoserLP);
+                lifePoint -= t2LoserLP;
+                lifePoints();
             }else if(playChoice == "s1" && opponentChoice == "p2"){
                 Status.setText("You Lose!");
+                battleLogLose(t2LoserLP);
+                lifePoint -= t2LoserLP;
+                lifePoints();
             }else if(playChoice == "s1" && opponentChoice == "s2"){
                 Status.setText("You Lose!");
+                battleLogLose(t2LoserLP);
+                lifePoint -= t2LoserLP;
+                lifePoints();
             }else if(playChoice == "s1" && opponentChoice == "r3"){
                 Status.setText("You Lose!");
+                battleLogLose(t3LoserLP);
+                lifePoint -= t3LoserLP;
+                lifePoints();
             }else if(playChoice == "s1" && opponentChoice == "p3"){
                 Status.setText("You Lose!");
+                battleLogLose(t3LoserLP);
+                lifePoint -= t3LoserLP;
+                lifePoints();
             }else if(playChoice == "s1" && opponentChoice == "s3"){
                 Status.setText("You Lose!");
+                battleLogLose(t3LoserLP);
+                lifePoint -= t3LoserLP;
+                lifePoints();
             }else if(playChoice == "s1" && opponentChoice == "pip"){
                 Status.setText("You Lose!");
+                battleLogLose(pipLoserLP);
+                lifePoint -= pipLoserLP;
+                lifePoints();
             }
             
             //r2 win
@@ -270,14 +336,29 @@ public class GamePlay extends javax.swing.JFrame {
             //r2 lose
             else if(playChoice == "r2" && opponentChoice == "p2"){
                 Status.setText("You Lose!");
+                battleLogLose(t2LoserLP);
+                lifePoint -= t2LoserLP;
+                lifePoints();
             }else if(playChoice == "r2" && opponentChoice == "r3"){
                 Status.setText("You Lose!");
+                battleLogLose(t3LoserLP);
+                lifePoint -= t3LoserLP;
+                lifePoints();
             }else if(playChoice == "r2" && opponentChoice == "p3"){
                 Status.setText("You Lose!");
+                battleLogLose(t3LoserLP);
+                lifePoint -= t3LoserLP;
+                lifePoints();
             }else if(playChoice == "r2" && opponentChoice == "s3"){
                 Status.setText("You Lose!");
+                battleLogLose(t3LoserLP);
+                lifePoint -= t3LoserLP;
+                lifePoints();
             }else if(playChoice == "r2" && opponentChoice == "jok"){
                 Status.setText("You Lose!");
+                battleLogLose(jokLoserLP);
+                lifePoint -= jokLoserLP;
+                lifePoints();
             }
             
             //p2 win 
@@ -293,14 +374,29 @@ public class GamePlay extends javax.swing.JFrame {
             //p2 lose
             else if(playChoice == "p2" && opponentChoice == "s2"){
                 Status.setText("You Lose!");
+                battleLogLose(t2LoserLP);
+                lifePoint -= t2LoserLP;
+                lifePoints();
             }else if(playChoice == "p2" && opponentChoice == "r3"){
                 Status.setText("You Lose!");
+                battleLogLose(t3LoserLP);
+                lifePoint -= t3LoserLP;
+                lifePoints();
             }else if(playChoice == "p2" && opponentChoice == "p3"){
                 Status.setText("You Lose!");
+                battleLogLose(t3LoserLP);
+                lifePoint -= t3LoserLP;
+                lifePoints();
             }else if(playChoice == "p2" && opponentChoice == "s3"){
                 Status.setText("You Lose!");
+                battleLogLose(t3LoserLP);
+                lifePoint -= t3LoserLP;
+                lifePoints();
             }else if(playChoice == "p2" && opponentChoice == "jok"){
                 Status.setText("You Lose!");
+                battleLogLose(jokLoserLP);
+                lifePoint -= jokLoserLP;
+                lifePoints();
             }
             
             //s2 win
@@ -316,14 +412,29 @@ public class GamePlay extends javax.swing.JFrame {
             //s2 lose
             else if(playChoice == "s2" && opponentChoice == "r2"){
                 Status.setText("You Lose!");
+                battleLogLose(t2LoserLP);
+                lifePoint -= t2LoserLP;
+                lifePoints();
             }else if(playChoice == "s2" && opponentChoice == "r3"){
                 Status.setText("You Lose!");
+                battleLogLose(t3LoserLP);
+                lifePoint -= t3LoserLP;
+                lifePoints();
             }else if(playChoice == "s2" && opponentChoice == "p3"){
                 Status.setText("You Lose!");
+                battleLogLose(t3LoserLP);
+                lifePoint -= t3LoserLP;
+                lifePoints();
             }else if(playChoice == "s2" && opponentChoice == "s3"){
                 Status.setText("You Lose!");
+                battleLogLose(t3LoserLP);
+                lifePoint -= t3LoserLP;
+                lifePoints();
             }else if(playChoice == "s2" && opponentChoice == "jok"){
                 Status.setText("You Lose!");
+                battleLogLose(t3LoserLP);
+                lifePoint -= t3LoserLP;
+                lifePoints();
             }
             
             //r3 win
@@ -345,8 +456,14 @@ public class GamePlay extends javax.swing.JFrame {
             //r3 lose
             else if(playChoice == "r3" && opponentChoice == "p3"){
                 Status.setText("You Lose!");
+                battleLogLose(t3LoserLP);
+                lifePoint -= t3LoserLP;
+                lifePoints();
             }else if(playChoice == "r3" && opponentChoice == "jok"){
                 Status.setText("You Lose!");
+                battleLogLose(jokLoserLP);
+                lifePoint -= jokLoserLP;
+                lifePoints();
             }
             
             //p3 win
@@ -368,8 +485,14 @@ public class GamePlay extends javax.swing.JFrame {
             //p3 lose
             else if(playChoice == "p3" && opponentChoice == "s3"){
                 Status.setText("You Lose!");
+                battleLogLose(t3LoserLP);
+                lifePoint -= t3LoserLP;
+                lifePoints();
             }else if(playChoice == "p3" && opponentChoice == "jok"){
                 Status.setText("You Lose!");
+                battleLogLose(jokLoserLP);
+                lifePoint -= jokLoserLP;
+                lifePoints();
             }
             
             //s3 win
@@ -391,8 +514,14 @@ public class GamePlay extends javax.swing.JFrame {
             //s3 lose
             else if(playChoice == "s3" && opponentChoice == "r3"){
                 Status.setText("You Lose!");
+                battleLogLose(t3LoserLP);
+                lifePoint -= t3LoserLP;
+                lifePoints();
             }else if(playChoice == "s3" && opponentChoice == "jok"){
                 Status.setText("You Lose!");
+                battleLogLose(jokLoserLP);
+                lifePoint -= jokLoserLP;
+                lifePoints();
             }
             
             //jok win
@@ -412,12 +541,24 @@ public class GamePlay extends javax.swing.JFrame {
             //jok lose
             else if(playChoice == "jok" && opponentChoice == "r1"){
                 Status.setText("You Lose!");
+                battleLogLose(t1LoserLP);
+                lifePoint -= t1LoserLP;
+                lifePoints();
             }else if(playChoice == "jok" && opponentChoice == "p1"){
                 Status.setText("You Lose!");
+                battleLogLose(t1LoserLP);
+                lifePoint -= t1LoserLP;
+                lifePoints();
             }else if(playChoice == "jok" && opponentChoice == "s1"){
                 Status.setText("You Lose!");
+                battleLogLose(t1LoserLP);
+                lifePoint -= t1LoserLP;
+                lifePoints();
             }else if(playChoice == "jok" && opponentChoice == "pip"){
                 Status.setText("You Lose!");
+                battleLogLose(pipLoserLP);
+                lifePoint -= pipLoserLP;
+                lifePoints();
             }
             
             //pip win
@@ -433,16 +574,34 @@ public class GamePlay extends javax.swing.JFrame {
             //pip lose
             else if(playChoice == "pip" && opponentChoice == "r2"){
                 Status.setText("You Lose!");
+                battleLogLose(t2LoserLP);
+                lifePoint -= t2LoserLP;
+                lifePoints();
             }else if(playChoice == "pip" && opponentChoice == "p2"){
                 Status.setText("You Lose!");
+                battleLogLose(t2LoserLP);
+                lifePoint -= t2LoserLP;
+                lifePoints();
             }else if(playChoice == "pip" && opponentChoice == "s2"){
                 Status.setText("You Lose!");
+                battleLogLose(t2LoserLP);
+                lifePoint -= t2LoserLP;
+                lifePoints();
             }else if(playChoice == "pip" && opponentChoice == "r3"){
                 Status.setText("You Lose!");
+                battleLogLose(t3LoserLP);
+                lifePoint -= t3LoserLP;
+                lifePoints();
             }else if(playChoice == "pip" && opponentChoice == "p3"){
                 Status.setText("You Lose!");
+                battleLogLose(t3LoserLP);
+                lifePoint -= t3LoserLP;
+                lifePoints();
             }else if(playChoice == "pip" && opponentChoice == "s3"){
                 Status.setText("You Lose!");
+                battleLogLose(t3LoserLP);
+                lifePoint -= t3LoserLP;
+                lifePoints();
             }
             
         
