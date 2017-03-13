@@ -708,12 +708,12 @@ public class GamePlay extends javax.swing.JFrame {
     //battle log
     private void battleLogLose(int loserLP){
         //battleLogPlayer1
-        int percent = loserLP/1000;
-        int width = (270 * percent);
-        lifebar1 -= width;
-        battlogP1.append("Player 2 WIN || [" + lifePoint + "-" + loserLP + "] \n");
+        int x = loserLP/4 - 10;
+        lifebar1 -= x;
+        battlogP1.append("Player 2 WIN || [" + lifePoint + "-" + loserLP + "] \n" + x);
+        
         PlayerLifePoints.setSize(lifebar1,30); //lifebar width
-        battlogP2.append("Player WIN");
+        battlogP2.append("Player WIN/n");
     }
     
     //battle log opponent
