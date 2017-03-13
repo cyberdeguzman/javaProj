@@ -164,7 +164,22 @@ public class GamePlay extends javax.swing.JFrame {
     //play cards
     private void play()
     {
-        String opponentChoice = "r2";
+//        if(playVal != 60){
+//            if(fakecard > playVal)
+//            {
+//            Status.setText("You lost");            
+//            battleLogLose();
+//            lifePoint -= loserLP;
+//            lifePoints();
+//            
+//            }
+//            else
+//            {
+//            Status.setText("You win");
+//            }
+//        }
+//        loseState();
+        String opponentChoice = "r1";
         String playChoice = stringChoice();
         
         if(playChoice.equals(opponentChoice))
@@ -708,12 +723,10 @@ public class GamePlay extends javax.swing.JFrame {
     //battle log
     private void battleLogLose(int loserLP){
         //battleLogPlayer1
-        int x = loserLP/4 - 10;
-        lifebar1 -= x;
-        battlogP1.append("Player 2 WIN || [" + lifePoint + "-" + loserLP + "] \n" + x);
-        
+        //lifebar1 -= 54;
+        battlogP1.append("Player 2 WIN || [" + lifePoint + "-" + loserLP + "] \n");
         PlayerLifePoints.setSize(lifebar1,30); //lifebar width
-        battlogP2.append("Player WIN/n");
+        battlogP2.append("Player WIN");
     }
     
     //battle log opponent
