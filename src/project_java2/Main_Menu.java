@@ -27,7 +27,6 @@ public class Main_Menu extends javax.swing.JFrame {
         
         initComponents();
         timer1();
-        jTextArea1.hide();
         
         
         
@@ -39,45 +38,18 @@ public class Main_Menu extends javax.swing.JFrame {
         public void run() {
             if(z == 0){
             jTextArea2.setBackground(new Color(0,0,0,0));
-            jTextArea2.hide();
+            jTextArea2.setVisible(false);
             }
             jTextArea2.setBackground(new Color(0,0,0,z));
             jTextArea2.repaint();   
-            
+            System.out.println("Timer 1 still working" + z);
     z -= 10;
         }
     }, 0, (long) 40, TimeUnit.MILLISECONDS);
         }
     
     
-        public void timer(){
-    final ScheduledExecutorService executorService = Executors.newSingleThreadScheduledExecutor();
-    executorService.scheduleAtFixedRate(new Runnable() {
-        @Override
-        public void run() {
-            black();
-        }
-    }, 0, (long) 15, TimeUnit.MILLISECONDS);
-    }
-    
-    public void black(){
-    //Main_Menu mm = new Main_Menu();
-    ViewDeck vd = new ViewDeck();
-    
-        if (i == 200 && deck == 4){
-        vd.show();
-        }
-        if (i > 202){
-        this.dispose();
-        }
-    jTextArea1.show();
-    jTextArea1.setBackground(new Color(0,0,0,i));
-    jTextArea1.repaint();     
-    i += 10;
-    
-    
-    
-    }
+        
     
 
     /**
@@ -89,20 +61,24 @@ public class Main_Menu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jTextArea2 = new javax.swing.JTextArea();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         BackGround = new javax.swing.JLabel();
-        jTextArea2 = new javax.swing.JTextArea();
-        jTextArea1 = new javax.swing.JTextArea();
         jScrollPane1 = new javax.swing.JScrollPane();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
         getContentPane().setLayout(null);
+
+        jTextArea2.setEditable(false);
+        jTextArea2.setBackground(new java.awt.Color(0, 0, 0));
+        jTextArea2.setColumns(20);
+        jTextArea2.setRows(5);
+        getContentPane().add(jTextArea2);
+        jTextArea2.setBounds(0, 0, 1000, 710);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_java2/Images/Buttons/Exit.png"))); // NOI18N
         jLabel1.setText("  ");
@@ -132,17 +108,12 @@ public class Main_Menu extends javax.swing.JFrame {
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_java2/Images/Buttons/HowToPlay.png"))); // NOI18N
         jLabel3.setText(" ");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(430, 550, 130, 40);
-
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_java2/Images/Buttons/SinglePlayer.png"))); // NOI18N
-        jLabel4.setText(" ");
-        getContentPane().add(jLabel4);
-        jLabel4.setBounds(420, 590, 140, 40);
+        jLabel3.setBounds(430, 400, 130, 40);
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_java2/Images/Buttons/MultiPlayer.png"))); // NOI18N
         jLabel5.setText("  ");
         getContentPane().add(jLabel5);
-        jLabel5.setBounds(430, 630, 130, 40);
+        jLabel5.setBounds(430, 440, 130, 40);
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_java2/Images/Buttons/Deck.png"))); // NOI18N
         jLabel6.setText("  ");
@@ -152,28 +123,16 @@ public class Main_Menu extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jLabel6);
-        jLabel6.setBounds(470, 680, 50, 50);
+        jLabel6.setBounds(470, 490, 50, 50);
 
         BackGround.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_java2/Images/BackGrounds/Main_Menu.png"))); // NOI18N
         BackGround.setText("  ");
         getContentPane().add(BackGround);
-        BackGround.setBounds(0, 0, 1000, 800);
-
-        jTextArea2.setBackground(new java.awt.Color(0, 0, 0));
-        jTextArea2.setColumns(20);
-        jTextArea2.setRows(5);
-        getContentPane().add(jTextArea2);
-        jTextArea2.setBounds(0, 0, 1000, 800);
-
-        jTextArea1.setBackground(new java.awt.Color(0, 0, 0));
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        getContentPane().add(jTextArea1);
-        jTextArea1.setBounds(0, 0, 1000, 800);
+        BackGround.setBounds(0, 0, 1000, 600);
         getContentPane().add(jScrollPane1);
         jScrollPane1.setBounds(0, 0, 2, 2);
 
-        setSize(new java.awt.Dimension(1000, 800));
+        setSize(new java.awt.Dimension(1016, 639));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -192,8 +151,6 @@ public class Main_Menu extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel2MouseClicked
 
     private void jLabel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseClicked
-        // TODO add your handling code here:
-        timer();
         deck = 4;
     }//GEN-LAST:event_jLabel6MouseClicked
 
@@ -223,6 +180,7 @@ public class Main_Menu extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(Main_Menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -237,11 +195,9 @@ public class Main_Menu extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextArea jTextArea2;
     // End of variables declaration//GEN-END:variables
 }

@@ -69,7 +69,7 @@ public class NewJFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/Cards/BackDeck.png"));
+        ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/JokerTemp.png"));
         jLabel1.setIcon(ii);
     }//GEN-LAST:event_jButton1ActionPerformed
 
