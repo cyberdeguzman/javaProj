@@ -539,6 +539,7 @@ public class GamePlay extends javax.swing.JFrame {
         if(playChoice.equals(opponentChoice))
         {
             Status.setText("It's a tie!!");
+            battleLogTie();
         }
         else if(!playChoice.equals(opponentChoice))
         {
@@ -1249,8 +1250,8 @@ public class GamePlay extends javax.swing.JFrame {
     }
     
     private void battleLogTie(){
-        battlogP1.append("ITS A TIE");
-        battlogP2.append("ITS A TIE");
+        battlogP1.append("ITS A TIE\n");
+        battlogP2.append("ITS A TIE\n");
     }
 
     /**
