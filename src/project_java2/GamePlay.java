@@ -507,6 +507,9 @@ public class GamePlay extends javax.swing.JFrame {
                 lifePoints();
             }else if(playChoice == "r1" && opponentChoice == "p2"){
                 Status.setText("You Lose!");
+                
+                
+                
                 battleLogLose(t2LoserLP);
                 lifePoint -= t2LoserLP;
                 lifePoints();
