@@ -175,198 +175,198 @@ public class GamePlay extends javax.swing.JFrame {
     private void iconvalup(){
         //Rock I
         if(Hand1.getText().equals("Rock I")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIRock.png"));
             Hand1.setIcon(ii);
         }
         if(Hand2.getText().equals("Rock I")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIRock.png"));
             Hand2.setIcon(ii);
         }
         if(Hand3.getText().equals("Rock I")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIRock.png"));
             Hand3.setIcon(ii);
         }
         if(Hand4.getText().equals("Rock I")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIRock.png"));
             Hand4.setIcon(ii);
         }
         if(Hand5.getText().equals("Rock I")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIRock.png"));
             Hand5.setIcon(ii);
         }
         
         //Paper I
         if(Hand1.getText().equals("Paper I")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIPaper.png"));
             Hand1.setIcon(ii);
         }
         if(Hand2.getText().equals("Paper I")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIPaper.png"));
             Hand2.setIcon(ii);
         }
         if(Hand3.getText().equals("Paper I")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIPaper.png"));
             Hand3.setIcon(ii);
         }
         if(Hand4.getText().equals("Paper I")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIPaper.png"));
             Hand4.setIcon(ii);
         }
         if(Hand5.getText().equals("Paper I")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIPaper.png"));
             Hand5.setIcon(ii);
         }
         
         //Scissors I
         if(Hand1.getText().equals("Scissors I")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIScissors.png"));
             Hand1.setIcon(ii);
         }
         if(Hand2.getText().equals("Scissors I")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIScissors.png"));
             Hand2.setIcon(ii);
         }
         if(Hand3.getText().equals("Scissors I")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIScissors.png"));
             Hand3.setIcon(ii);
         }
         if(Hand4.getText().equals("Scissors I")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIScissors.png"));
             Hand4.setIcon(ii);
         }
         if(Hand5.getText().equals("Scissors I")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIScissors.png"));
             Hand5.setIcon(ii);
         }
         
         //Rock II
         if(Hand1.getText().equals("Rock II")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIRock.png"));
             Hand1.setIcon(ii);
         }
         if(Hand2.getText().equals("Rock II")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIRock.png"));
             Hand2.setIcon(ii);
         }
         if(Hand3.getText().equals("Rock II")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIRock.png"));
             Hand3.setIcon(ii);
         }
         if(Hand4.getText().equals("Rock II")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIRock.png"));
             Hand4.setIcon(ii);
         }
         if(Hand5.getText().equals("Rock II")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIRock.png"));
             Hand5.setIcon(ii);
         }
         
         //Paper II
         if(Hand1.getText().equals("Paper II")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIPaper.png"));
             Hand1.setIcon(ii);
         }
         if(Hand2.getText().equals("Paper II")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIPaper.png"));
             Hand2.setIcon(ii);
         }
         if(Hand3.getText().equals("Paper II")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIPaper.png"));
             Hand3.setIcon(ii);
         }
         if(Hand4.getText().equals("Paper II")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIPaper.png"));
             Hand4.setIcon(ii);
         }
         if(Hand5.getText().equals("Paper II")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIPaper.png"));
             Hand5.setIcon(ii);
         }
         
         //Scissors II
         if(Hand1.getText().equals("Scissors II")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIScissors.png"));
             Hand1.setIcon(ii);
         }
         if(Hand2.getText().equals("Scissors II")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIScissors.png"));
             Hand2.setIcon(ii);
         }
         if(Hand3.getText().equals("Scissors II")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIScissors.png"));
             Hand3.setIcon(ii);
         }
         if(Hand4.getText().equals("Scissors II")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIScissors.png"));
             Hand4.setIcon(ii);
         }
         if(Hand5.getText().equals("Scissors II")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIScissors.png"));
             Hand5.setIcon(ii);
         }
         //Rock III
         if(Hand1.getText().equals("Rock III")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIIRock.png"));
             Hand1.setIcon(ii);
         }
         if(Hand2.getText().equals("Rock III")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIIRock.png"));
             Hand2.setIcon(ii);
         }
         if(Hand3.getText().equals("Rock III")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIIRock.png"));
             Hand3.setIcon(ii);
         }
         if(Hand4.getText().equals("Rock III")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIIRock.png"));
             Hand4.setIcon(ii);
         }
         if(Hand5.getText().equals("Rock III")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIIRock.png"));
             Hand5.setIcon(ii);
         }
         
         //Paper III
         if(Hand1.getText().equals("Paper III")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIIPaper.png"));
             Hand1.setIcon(ii);
         }
         if(Hand2.getText().equals("Paper III")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIIPaper.png"));
             Hand2.setIcon(ii);
         }
         if(Hand3.getText().equals("Paper III")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIIPaper.png"));
             Hand3.setIcon(ii);
         }
         if(Hand4.getText().equals("Paper III")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIIPaper.png"));
             Hand4.setIcon(ii);
         }
         if(Hand5.getText().equals("Paper III")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIIPaper.png"));
             Hand5.setIcon(ii);
         }
         
         //Scissors III
         if(Hand1.getText().equals("Scissors III")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIIScissors.png"));
             Hand1.setIcon(ii);
         }
         if(Hand2.getText().equals("Scissors III")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIIScissors.png"));
             Hand2.setIcon(ii);
         }
         if(Hand3.getText().equals("Scissors III")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIIScissors.png"));
             Hand3.setIcon(ii);
         }
         if(Hand4.getText().equals("Scissors III")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIIScissors.png"));
             Hand4.setIcon(ii);
         }
         if(Hand5.getText().equals("Scissors III")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIIScissors.png"));
             Hand5.setIcon(ii);
         }
         //Joker
@@ -418,41 +418,41 @@ public class GamePlay extends javax.swing.JFrame {
         
         
         
-        //playhand
+       //playhand
         if( playHand.getText().equals("Paper I")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIPaper.png"));
              playHand.setIcon(ii);
         }
         if( playHand.getText().equals("Rock I")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIRock.png"));
              playHand.setIcon(ii);
         }
         if( playHand.getText().equals("Scissors I")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIScissors.png"));
              playHand.setIcon(ii);
         }
         if( playHand.getText().equals("Paper II")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIPaper.png"));
              playHand.setIcon(ii);
         }
         if( playHand.getText().equals("Rock II")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIRock.png"));
              playHand.setIcon(ii);
         }
         if( playHand.getText().equals("Scissors II")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIScissors.png"));
              playHand.setIcon(ii);
         }
         if( playHand.getText().equals("Paper III")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIIPaper.png"));
              playHand.setIcon(ii);
         }
         if( playHand.getText().equals("Rock III")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIIRock.png"));
              playHand.setIcon(ii);
         }
         if( playHand.getText().equals("Scissors III")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIIScissors.png"));
              playHand.setIcon(ii);
         }
         if( playHand.getText().equals("Joker")){
@@ -466,39 +466,39 @@ public class GamePlay extends javax.swing.JFrame {
 
         //opponHand
         if( opponentChoice.equals("p1")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIPaper.png"));
              opponHand.setIcon(ii);
         }
         if( opponentChoice.equals("r1")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIRock.png"));
              opponHand.setIcon(ii);
         }
         if( opponentChoice.equals("s1")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIScissors.png"));
              opponHand.setIcon(ii);
         }
         if( opponentChoice.equals("p2")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIPaper.png"));
              opponHand.setIcon(ii);
         }
         if( opponentChoice.equals("r2")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIRock.png"));
              opponHand.setIcon(ii);
         }
         if( opponentChoice.equals("s2")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIScissors.png"));
              opponHand.setIcon(ii);
         }
         if( opponentChoice.equals("p3")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIIPaper.png"));
              opponHand.setIcon(ii);
         }
         if( opponentChoice.equals("r3")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIIRock.png"));
              opponHand.setIcon(ii);
         }
         if( opponentChoice.equals("s3")){
-            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIItemplate.png"));
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIIScissors.png"));
              opponHand.setIcon(ii);
         }
         if( opponentChoice.equals("jok")){
@@ -1312,6 +1312,7 @@ public class GamePlay extends javax.swing.JFrame {
         Deck.setBounds(20, 400, 90, 140);
 
         Hand1.setBackground(new java.awt.Color(255, 255, 255));
+        Hand1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_java2/Images/GamePlayComponents/Handcard_noval.png"))); // NOI18N
         Hand1.setText("Hand");
         Hand1.setOpaque(true);
         Hand1.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -1323,6 +1324,7 @@ public class GamePlay extends javax.swing.JFrame {
         Hand1.setBounds(130, 470, 90, 118);
 
         Hand2.setBackground(new java.awt.Color(255, 255, 255));
+        Hand2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_java2/Images/GamePlayComponents/Handcard_noval.png"))); // NOI18N
         Hand2.setText("Hand");
         Hand2.setOpaque(true);
         Hand2.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -1334,6 +1336,7 @@ public class GamePlay extends javax.swing.JFrame {
         Hand2.setBounds(240, 470, 90, 118);
 
         Hand5.setBackground(new java.awt.Color(255, 255, 255));
+        Hand5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_java2/Images/GamePlayComponents/Handcard_noval.png"))); // NOI18N
         Hand5.setText("Hand");
         Hand5.setOpaque(true);
         Hand5.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -1345,6 +1348,7 @@ public class GamePlay extends javax.swing.JFrame {
         Hand5.setBounds(570, 470, 90, 118);
 
         Hand3.setBackground(new java.awt.Color(255, 255, 255));
+        Hand3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_java2/Images/GamePlayComponents/Handcard_noval.png"))); // NOI18N
         Hand3.setText("Hand");
         Hand3.setOpaque(true);
         Hand3.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -1356,6 +1360,7 @@ public class GamePlay extends javax.swing.JFrame {
         Hand3.setBounds(350, 470, 90, 118);
 
         Hand4.setBackground(new java.awt.Color(255, 255, 255));
+        Hand4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_java2/Images/GamePlayComponents/Handcard_noval.png"))); // NOI18N
         Hand4.setText("Hand");
         Hand4.setOpaque(true);
         Hand4.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -1368,7 +1373,7 @@ public class GamePlay extends javax.swing.JFrame {
 
         Error_Val.setText("jTextField1");
         getContentPane().add(Error_Val);
-        Error_Val.setBounds(931, 11, 59, 20);
+        Error_Val.setBounds(990, 11, 0, 20);
 
         Status.setText(" ");
         getContentPane().add(Status);
@@ -1397,6 +1402,7 @@ public class GamePlay extends javax.swing.JFrame {
         status2.setBounds(20, 310, 0, 20);
 
         playHand.setBackground(new java.awt.Color(204, 255, 204));
+        playHand.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_java2/Images/GamePlayComponents/Playcard_noval.png"))); // NOI18N
         playHand.setText("Play Hand");
         playHand.setOpaque(true);
         playHand.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -1537,19 +1543,27 @@ public class GamePlay extends javax.swing.JFrame {
         getContentPane().add(HealthBorder1);
         HealthBorder1.setBounds(0, 1, 283, 39);
 
+        battlogP1.setEditable(false);
         battlogP1.setColumns(20);
+        battlogP1.setFont(new java.awt.Font("Century Gothic", 0, 10)); // NOI18N
+        battlogP1.setForeground(new java.awt.Color(102, 102, 102));
         battlogP1.setRows(5);
+        battlogP1.setEnabled(false);
         jScrollPane1.setViewportView(battlogP1);
 
         getContentPane().add(jScrollPane1);
-        jScrollPane1.setBounds(720, 490, 270, 96);
+        jScrollPane1.setBounds(720, 490, 270, 76);
 
+        battlogP2.setEditable(false);
         battlogP2.setColumns(20);
+        battlogP2.setFont(new java.awt.Font("Century Gothic", 0, 10)); // NOI18N
+        battlogP2.setForeground(new java.awt.Color(102, 102, 102));
         battlogP2.setRows(5);
+        battlogP2.setEnabled(false);
         jScrollPane2.setViewportView(battlogP2);
 
         getContentPane().add(jScrollPane2);
-        jScrollPane2.setBounds(10, 50, 270, 96);
+        jScrollPane2.setBounds(10, 50, 270, 76);
 
         jLabel3.setBackground(new java.awt.Color(255, 51, 0));
         jLabel3.setText("DISCONNECT");
@@ -1590,6 +1604,7 @@ public class GamePlay extends javax.swing.JFrame {
         cardvalup();
         Hand1.setForeground(Color.red);
         Hand1.setIcon(null);
+        Hand1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_java2/Images/GamePlayComponents/Handcard_noval.png")));
         turndraw = 0;
         }
         if(turndraw == 3){
@@ -1605,6 +1620,7 @@ public class GamePlay extends javax.swing.JFrame {
         cardvalup();
         Hand2.setForeground(Color.red);
         Hand2.setIcon(null);
+        Hand2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_java2/Images/GamePlayComponents/Handcard_noval.png")));
         turndraw = 0;
         }
     }//GEN-LAST:event_Hand2MouseClicked
@@ -1617,6 +1633,7 @@ public class GamePlay extends javax.swing.JFrame {
         cardvalup();
         Hand3.setForeground(Color.red);
         Hand3.setIcon(null);
+        Hand3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_java2/Images/GamePlayComponents/Handcard_noval.png")));
         turndraw = 0;
         }
     }//GEN-LAST:event_Hand3MouseClicked
@@ -1629,6 +1646,7 @@ public class GamePlay extends javax.swing.JFrame {
         cardvalup();
         Hand4.setForeground(Color.red);
         Hand4.setIcon(null);
+        Hand4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_java2/Images/GamePlayComponents/Handcard_noval.png")));
         turndraw = 0;
         }
     }//GEN-LAST:event_Hand4MouseClicked
@@ -1636,11 +1654,12 @@ public class GamePlay extends javax.swing.JFrame {
     private void Hand5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Hand5MouseClicked
         if(turndraw == 1){
          playVal = handval [4];
-        playHand.setText(Hand1.getText());
+        playHand.setText(Hand5.getText());
         handval[4] = 60;
         cardvalup();
         Hand5.setForeground(Color.red);
         Hand5.setIcon(null);
+        Hand5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_java2/Images/GamePlayComponents/Handcard_noval.png")));
         turndraw = 0;
         }
     }//GEN-LAST:event_Hand5MouseClicked
@@ -1663,13 +1682,14 @@ public class GamePlay extends javax.swing.JFrame {
             }
             
         }
-        
+        playHand.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_java2/Images/GamePlayComponents/Playcard_noval.png")));
         
     }//GEN-LAST:event_jLabel1MouseClicked
 
     private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
         play();
         Draw();
+        playHand.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_java2/Images/GamePlayComponents/Playcard_noval.png")));
     }//GEN-LAST:event_jLabel2MouseClicked
 
     private void Hand6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Hand6MouseClicked

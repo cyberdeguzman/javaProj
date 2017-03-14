@@ -54,6 +54,9 @@
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/project_java2/Images/GamePlayComponents/Handcard_noval.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Hand"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
@@ -70,6 +73,9 @@
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/project_java2/Images/GamePlayComponents/Handcard_noval.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Hand"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -88,6 +94,9 @@
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/project_java2/Images/GamePlayComponents/Handcard_noval.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Hand"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
@@ -105,6 +114,9 @@
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
         </Property>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/project_java2/Images/GamePlayComponents/Handcard_noval.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Hand"/>
         <Property name="opaque" type="boolean" value="true"/>
       </Properties>
@@ -121,6 +133,9 @@
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/project_java2/Images/GamePlayComponents/Handcard_noval.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Hand"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -140,7 +155,7 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="931" y="11" width="-1" height="-1"/>
+          <AbsoluteConstraints x="990" y="11" width="0" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -194,6 +209,9 @@
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="cc" green="ff" red="cc" type="rgb"/>
+        </Property>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/project_java2/Images/GamePlayComponents/Playcard_noval.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Play Hand"/>
         <Property name="opaque" type="boolean" value="true"/>
@@ -455,8 +473,16 @@
       <SubComponents>
         <Component class="javax.swing.JTextArea" name="battlogP1">
           <Properties>
+            <Property name="editable" type="boolean" value="false"/>
             <Property name="columns" type="int" value="20"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Century Gothic" size="10" style="0"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="66" green="66" red="66" type="rgb"/>
+            </Property>
             <Property name="rows" type="int" value="5"/>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
         </Component>
       </SubComponents>
@@ -475,8 +501,16 @@
       <SubComponents>
         <Component class="javax.swing.JTextArea" name="battlogP2">
           <Properties>
+            <Property name="editable" type="boolean" value="false"/>
             <Property name="columns" type="int" value="20"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Century Gothic" size="10" style="0"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="66" green="66" red="66" type="rgb"/>
+            </Property>
             <Property name="rows" type="int" value="5"/>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
         </Component>
       </SubComponents>
