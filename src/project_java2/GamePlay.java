@@ -35,6 +35,10 @@ public class GamePlay extends javax.swing.JFrame {
     int lifebar1 = 270;
     int lifebar2 = 270;
     
+    String opponentChoice = "";
+    String[] myStringArray = {"r1","s1","p1","r2","s2","p2","r3","s3","p3","jok","pip"};
+    private Random rand = new Random();
+    
     int t1minus = 27;
     int t2minus = 54;
     int t3minus = 81;
@@ -118,6 +122,10 @@ public class GamePlay extends javax.swing.JFrame {
     cardvalup();
     }
     
+    public String getRandom()
+    {
+        return myStringArray[rand.nextInt(myStringArray.length)];
+    }
     
     //initialize card values
     private void cardval(){
@@ -454,7 +462,53 @@ public class GamePlay extends javax.swing.JFrame {
         if( playHand.getText().equals("Pip")){
             ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/Pip.png"));
              playHand.setIcon(ii);
-        }        
+        }
+
+        //opponHand
+        if( opponentChoice.equals("p1")){
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierItemplate.png"));
+             opponHand.setIcon(ii);
+        }
+        if( opponentChoice.equals("r1")){
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierItemplate.png"));
+             opponHand.setIcon(ii);
+        }
+        if( opponentChoice.equals("s1")){
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierItemplate.png"));
+             opponHand.setIcon(ii);
+        }
+        if( opponentChoice.equals("p2")){
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIItemplate.png"));
+             opponHand.setIcon(ii);
+        }
+        if( opponentChoice.equals("r2")){
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIItemplate.png"));
+             opponHand.setIcon(ii);
+        }
+        if( opponentChoice.equals("s2")){
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIItemplate.png"));
+             opponHand.setIcon(ii);
+        }
+        if( opponentChoice.equals("p3")){
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIItemplate.png"));
+             opponHand.setIcon(ii);
+        }
+        if( opponentChoice.equals("r3")){
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIItemplate.png"));
+             opponHand.setIcon(ii);
+        }
+        if( opponentChoice.equals("s3")){
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIItemplate.png"));
+             opponHand.setIcon(ii);
+        }
+        if( opponentChoice.equals("jok")){
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/Joker.png"));
+             opponHand.setIcon(ii);
+        }
+        if( opponentChoice.equals("jok")){
+            ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/Pip.png"));
+             opponHand.setIcon(ii);
+        }
 
 
 
@@ -478,7 +532,8 @@ public class GamePlay extends javax.swing.JFrame {
 //            }
 //        }
 //        loseState();
-        String opponentChoice = "s1";
+        opponentChoice = getRandom();
+        iconvalup();
         String playChoice = stringChoice();
         
         if(playChoice.equals(opponentChoice))
@@ -1063,7 +1118,7 @@ public class GamePlay extends javax.swing.JFrame {
     //String representation of numbers
     public String stringChoice(){
         String playChoice = "";
-        String opponentChoice = "r1";
+        //String opponentChoice = "r1";
         
         if(playVal >= 0 && playVal <6){
             playChoice = "p1";
@@ -1101,6 +1156,13 @@ public class GamePlay extends javax.swing.JFrame {
             Status.setText("YOUR LIFEPOINTS IS ZERO");
             turndraw = 3;
             JOptionPane.showMessageDialog(null, "YOU LOST");
+            Deck.setEnabled(false);
+        }
+        else if(lifePointOpponent <= 0)
+        {
+            Status.setText("OPPONENT'S LIFEPOINT IS ZERO");
+            turndraw = 3;
+            JOptionPane.showMessageDialog(null, "YOU WIN");
             Deck.setEnabled(false);
         }
     }
@@ -1172,16 +1234,16 @@ public class GamePlay extends javax.swing.JFrame {
     //battle log
     private void battleLogLose(int loserLP){
         //battleLogPlayer1
-        lifebar1 -= (loserLP/4) -10;
-        battlogP1.append("Player 2 WIN || [" + lifePoint + "-" + loserLP + "] \n");
+        lifebar1 -= (loserLP/4) - 10;
+        battlogP1.append("Player LOSE || [" + lifePoint + "-" + loserLP + "] \n");
         PlayerLifePoints.setSize(lifebar1,30); //lifebar width
-        battlogP2.append("Player WIN \n");
+        battlogP2.append("Player WIN || [" + lifePoint + "] \n");
     }
     
     //battle log opponent
     private void battleLogWin(int winLP){
-        lifebar2 -= (winLP/4)-10;
-        battlogP2.append("Player 1 WIN || [" + lifePoint + "-" +  winLP + "] \n");
+        lifebar2 -= (winLP/4) - 10;
+        battlogP2.append("Player 1 WIN || [" + lifePointOpponent + "-" +  winLP + "] \n");
         EnemyLifePoints.setSize(lifebar2,30); //lifebar width
         battlogP1.append("Player WIN\n");
     }
@@ -1220,7 +1282,7 @@ public class GamePlay extends javax.swing.JFrame {
         Hand9 = new javax.swing.JLabel();
         Hand10 = new javax.swing.JLabel();
         Deck1 = new javax.swing.JLabel();
-        playHand1 = new javax.swing.JLabel();
+        opponHand = new javax.swing.JLabel();
         PlayerLifePoints = new javax.swing.JLabel();
         EnemyLifePoints = new javax.swing.JLabel();
         HealthBorder1 = new javax.swing.JLabel();
@@ -1440,17 +1502,17 @@ public class GamePlay extends javax.swing.JFrame {
         getContentPane().add(Deck1);
         Deck1.setBounds(900, 70, 90, 140);
 
-        playHand1.setBackground(new java.awt.Color(204, 204, 255));
-        playHand1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_java2/Images/Cards/BackDeck.png"))); // NOI18N
-        playHand1.setText("Oppenent Play");
-        playHand1.setOpaque(true);
-        playHand1.addMouseListener(new java.awt.event.MouseAdapter() {
+        opponHand.setBackground(new java.awt.Color(204, 204, 255));
+        opponHand.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_java2/Images/Cards/BackDeck.png"))); // NOI18N
+        opponHand.setText("Oppenent Play");
+        opponHand.setOpaque(true);
+        opponHand.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                playHand1MouseClicked(evt);
+                opponHandMouseClicked(evt);
             }
         });
-        getContentPane().add(playHand1);
-        playHand1.setBounds(440, 150, 90, 117);
+        getContentPane().add(opponHand);
+        opponHand.setBounds(440, 150, 90, 117);
 
         PlayerLifePoints.setBackground(new java.awt.Color(153, 255, 255));
         PlayerLifePoints.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_java2/Images/GamePlayComponents/health.png"))); // NOI18N
@@ -1633,9 +1695,9 @@ public class GamePlay extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_Deck1MouseClicked
 
-    private void playHand1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_playHand1MouseClicked
+    private void opponHandMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_opponHandMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_playHand1MouseClicked
+    }//GEN-LAST:event_opponHandMouseClicked
 
     private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
         // TODO add your handling code here:
@@ -1715,8 +1777,8 @@ public class GamePlay extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JLabel opponHand;
     private javax.swing.JLabel playHand;
-    private javax.swing.JLabel playHand1;
     private javax.swing.JTextField status2;
     // End of variables declaration//GEN-END:variables
 }
