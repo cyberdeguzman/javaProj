@@ -5,16 +5,8 @@
  */
 package Test;
 
-import java.awt.Color;
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.InputStream;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.TimeUnit;
-import sun.audio.AudioPlayer;
-import sun.audio.AudioStream;
-
+import javax.swing.ImageIcon;
 
 /**
  *
@@ -25,35 +17,10 @@ public class NewJFrame extends javax.swing.JFrame {
     /**
      * Creates new form NewJFrame
      */
-    int i =  200;
-    
     public NewJFrame() {
         initComponents();
-        jTextArea1.setBackground(new Color (0,0,0,255));
-        timer();
-        
     }
-    
-    public void timer(){
-    final ScheduledExecutorService executorService = Executors.newSingleThreadScheduledExecutor();
-    executorService.scheduleAtFixedRate(new Runnable() {
-        @Override
-        public void run() {
-            jTextArea1.setBackground(new Color (0,0,0,i));
-            jTextArea1.repaint();
-            if (i != 0){
-            i -= 50;
-            jLabel1.setText(String.valueOf(i));
-    }
-        }
-    }
-            , 0, (long) 50, TimeUnit.MILLISECONDS);
-    }
-    
-    public void black(){
-    
-    }
-    
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -65,17 +32,10 @@ public class NewJFrame extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        addWindowListener(new java.awt.event.WindowAdapter() {
-            public void windowOpened(java.awt.event.WindowEvent evt) {
-                formWindowOpened(evt);
-            }
-        });
 
-        jLabel1.setText("100");
+        jLabel1.setText("jLabel1");
 
         jButton1.setText("jButton1");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -84,46 +44,33 @@ public class NewJFrame extends javax.swing.JFrame {
             }
         });
 
-        jTextArea1.setBackground(new java.awt.Color(0, 0, 0));
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jScrollPane1.setViewportView(jTextArea1);
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(189, 189, 189)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton1)
-                    .addComponent(jLabel1))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(119, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(115, 115, 115))
+                .addGap(69, 69, 69)
+                .addComponent(jButton1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 133, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(68, 68, 68))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(82, 82, 82)
-                .addComponent(jLabel1)
-                .addGap(17, 17, 17)
-                .addComponent(jButton1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(33, 33, 33))
+                .addGap(63, 63, 63)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton1))
+                .addContainerGap(135, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
-         
-    }//GEN-LAST:event_formWindowOpened
-
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        ImageIcon ii = new ImageIcon(getClass().getResource("/project_java2/Images/Cards/BackDeck.png"));
+        jLabel1.setIcon(ii);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
@@ -164,7 +111,5 @@ public class NewJFrame extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
     // End of variables declaration//GEN-END:variables
 }
