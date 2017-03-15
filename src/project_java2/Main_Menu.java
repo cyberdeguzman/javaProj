@@ -71,16 +71,14 @@ public class Main_Menu extends javax.swing.JFrame {
         BackGround = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
-        getContentPane().setLayout(null);
-
         jTextArea2.setEditable(false);
         jTextArea2.setBackground(new java.awt.Color(0, 0, 0));
         jTextArea2.setColumns(20);
         jTextArea2.setRows(5);
-        getContentPane().add(jTextArea2);
-        jTextArea2.setBounds(-10, -10, 1020, 710);
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
+        getContentPane().setLayout(null);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_java2/Images/Buttons/Exit.png"))); // NOI18N
         jLabel1.setText("  ");
