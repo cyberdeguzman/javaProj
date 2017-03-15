@@ -50,8 +50,13 @@ public class ViewDeck extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jTextArea1 = new javax.swing.JTextArea();
         Min = new javax.swing.JLabel();
         quitGame = new javax.swing.JLabel();
+        cardName = new javax.swing.JLabel();
+        cardName1 = new javax.swing.JLabel();
+        cardDesc = new javax.swing.JLabel();
+        cardDesc1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -66,7 +71,11 @@ public class ViewDeck extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         Background = new javax.swing.JLabel();
-        jTextArea1 = new javax.swing.JTextArea();
+
+        jTextArea1.setEditable(false);
+        jTextArea1.setBackground(new java.awt.Color(0, 0, 0));
+        jTextArea1.setColumns(20);
+        jTextArea1.setRows(5);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -97,73 +106,146 @@ public class ViewDeck extends javax.swing.JFrame {
         getContentPane().add(quitGame);
         quitGame.setBounds(960, 10, 30, 30);
 
+        cardName.setFont(new java.awt.Font("Century Gothic", 0, 24)); // NOI18N
+        cardName.setForeground(new java.awt.Color(255, 51, 51));
+        cardName.setText(" ");
+        getContentPane().add(cardName);
+        cardName.setBounds(452, 50, 230, 40);
+
+        cardName1.setFont(new java.awt.Font("Century Gothic", 0, 24)); // NOI18N
+        cardName1.setText(" ");
+        getContentPane().add(cardName1);
+        cardName1.setBounds(450, 50, 230, 40);
+
+        cardDesc.setFont(new java.awt.Font("Century Gothic", 0, 11)); // NOI18N
+        cardDesc.setForeground(new java.awt.Color(255, 0, 0));
+        cardDesc.setText("jLabel14");
+        getContentPane().add(cardDesc);
+        cardDesc.setBounds(470, 130, 100, 20);
+
+        cardDesc1.setFont(new java.awt.Font("Century Gothic", 1, 11)); // NOI18N
+        cardDesc1.setForeground(new java.awt.Color(0, 204, 255));
+        cardDesc1.setText("jLabel14");
+        getContentPane().add(cardDesc1);
+        cardDesc1.setBounds(700, 130, 190, 15);
+
         jLabel2.setBackground(new java.awt.Color(204, 255, 255));
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIPaper.png"))); // NOI18N
         jLabel2.setText("jLabel2");
         jLabel2.setOpaque(true);
+        jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel2MouseClicked(evt);
+            }
+        });
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(260, 20, 90, 118);
+        jLabel2.setBounds(150, 20, 90, 118);
 
         jLabel3.setBackground(new java.awt.Color(204, 255, 255));
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIScissors.png"))); // NOI18N
         jLabel3.setText("jLabel2");
         jLabel3.setOpaque(true);
+        jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel3MouseClicked(evt);
+            }
+        });
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(40, 20, 90, 118);
+        jLabel3.setBounds(260, 20, 90, 118);
 
         jLabel4.setBackground(new java.awt.Color(204, 255, 255));
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIRock.png"))); // NOI18N
         jLabel4.setText("jLabel2");
         jLabel4.setOpaque(true);
+        jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel4MouseClicked(evt);
+            }
+        });
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(150, 20, 90, 118);
+        jLabel4.setBounds(40, 20, 90, 118);
 
         jLabel5.setBackground(new java.awt.Color(204, 255, 255));
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIScissors.png"))); // NOI18N
         jLabel5.setText("jLabel2");
         jLabel5.setOpaque(true);
+        jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel5MouseClicked(evt);
+            }
+        });
         getContentPane().add(jLabel5);
-        jLabel5.setBounds(40, 160, 90, 118);
+        jLabel5.setBounds(260, 160, 90, 118);
 
         jLabel6.setBackground(new java.awt.Color(204, 255, 255));
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIRock.png"))); // NOI18N
         jLabel6.setText("jLabel2");
         jLabel6.setOpaque(true);
+        jLabel6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel6MouseClicked(evt);
+            }
+        });
         getContentPane().add(jLabel6);
-        jLabel6.setBounds(150, 160, 90, 118);
+        jLabel6.setBounds(40, 160, 90, 118);
 
         jLabel7.setBackground(new java.awt.Color(204, 255, 255));
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIPaper.png"))); // NOI18N
         jLabel7.setText("jLabel2");
         jLabel7.setOpaque(true);
+        jLabel7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel7MouseClicked(evt);
+            }
+        });
         getContentPane().add(jLabel7);
-        jLabel7.setBounds(260, 160, 90, 118);
+        jLabel7.setBounds(150, 160, 90, 118);
 
         jLabel8.setBackground(new java.awt.Color(204, 255, 255));
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIIPaper.png"))); // NOI18N
         jLabel8.setText("jLabel2");
         jLabel8.setOpaque(true);
+        jLabel8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel8MouseClicked(evt);
+            }
+        });
         getContentPane().add(jLabel8);
-        jLabel8.setBounds(260, 300, 90, 118);
+        jLabel8.setBounds(150, 300, 90, 118);
 
         jLabel9.setBackground(new java.awt.Color(204, 255, 255));
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIIScissors.png"))); // NOI18N
         jLabel9.setText("jLabel2");
         jLabel9.setOpaque(true);
+        jLabel9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel9MouseClicked(evt);
+            }
+        });
         getContentPane().add(jLabel9);
-        jLabel9.setBounds(40, 300, 90, 118);
+        jLabel9.setBounds(260, 300, 90, 118);
 
         jLabel10.setBackground(new java.awt.Color(204, 255, 255));
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/TierIIIRock.png"))); // NOI18N
         jLabel10.setText("jLabel2");
         jLabel10.setOpaque(true);
+        jLabel10.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel10MouseClicked(evt);
+            }
+        });
         getContentPane().add(jLabel10);
-        jLabel10.setBounds(150, 300, 90, 118);
+        jLabel10.setBounds(40, 300, 90, 118);
 
         jLabel11.setBackground(new java.awt.Color(204, 255, 255));
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/Joker.png"))); // NOI18N
         jLabel11.setText("jLabel2");
         jLabel11.setOpaque(true);
+        jLabel11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel11MouseClicked(evt);
+            }
+        });
         getContentPane().add(jLabel11);
         jLabel11.setBounds(40, 440, 90, 118);
 
@@ -171,16 +253,27 @@ public class ViewDeck extends javax.swing.JFrame {
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_java2/Images/RealDeck/Pip.png"))); // NOI18N
         jLabel12.setText("jLabel2");
         jLabel12.setOpaque(true);
+        jLabel12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel12MouseClicked(evt);
+            }
+        });
         getContentPane().add(jLabel12);
         jLabel12.setBounds(150, 440, 90, 118);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_java2/Images/Buttons/Menu.png"))); // NOI18N
         jLabel1.setText("MAIN MENU");
         jLabel1.setOpaque(true);
+        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel1MouseClicked(evt);
+            }
+        });
         getContentPane().add(jLabel1);
         jLabel1.setBounds(780, 530, 130, 40);
 
-        jLabel13.setBackground(new java.awt.Color(102, 255, 204));
+        jLabel13.setBackground(new java.awt.Color(0, 153, 153));
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_java2/Images/BackGrounds/Menu.png"))); // NOI18N
         jLabel13.setText("jLabel13");
         jLabel13.setOpaque(true);
         getContentPane().add(jLabel13);
@@ -190,13 +283,6 @@ public class ViewDeck extends javax.swing.JFrame {
         Background.setText("jLabel13");
         getContentPane().add(Background);
         Background.setBounds(0, 0, 1000, 600);
-
-        jTextArea1.setEditable(false);
-        jTextArea1.setBackground(new java.awt.Color(0, 0, 0));
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        getContentPane().add(jTextArea1);
-        jTextArea1.setBounds(0, 0, 1000, 800);
 
         setSize(new java.awt.Dimension(1000, 600));
         setLocationRelativeTo(null);
@@ -215,6 +301,88 @@ public class ViewDeck extends javax.swing.JFrame {
         // TODO add your handling code here:
         this.dispose();
     }//GEN-LAST:event_quitGameMouseClicked
+
+    private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
+        cardName.setText("Rock I");
+        cardName.setForeground(Color.red);
+        cardName1.setText("Rock I");
+        cardDesc.setText("BEATS:\n" + "\nScissors I");
+        cardDesc1.setText("LOSES:\n" +
+"PAPER I\n" +
+"Rock II\n" +
+"Paper II\n" +
+"Scissors II\n" +
+"Rock III\n" +
+"Paper III\n" +
+"Scissors III");
+    }//GEN-LAST:event_jLabel4MouseClicked
+
+    private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
+        cardName.setText("Paper I");
+        cardName.setForeground(Color.red);
+        cardName1.setText("Paper I");
+    }//GEN-LAST:event_jLabel2MouseClicked
+
+    private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
+        cardName.setText("Scissors I");
+        cardName.setForeground(Color.red);
+        cardName1.setText("Scissors I");
+    }//GEN-LAST:event_jLabel3MouseClicked
+
+    private void jLabel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseClicked
+        cardName.setText("Rock II");
+        cardName.setForeground(Color.yellow);
+        cardName1.setText("Rock II");
+    }//GEN-LAST:event_jLabel6MouseClicked
+
+    private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
+        // TODO add your handling code here:
+        Main_Menu mm = new Main_Menu();
+        mm.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jLabel1MouseClicked
+
+    private void jLabel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseClicked
+        cardName.setText("Paper II");
+        cardName.setForeground(Color.yellow);
+        cardName1.setText("Paper II");
+    }//GEN-LAST:event_jLabel7MouseClicked
+
+    private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
+        cardName.setText("Scissors II");
+        cardName.setForeground(Color.yellow);
+        cardName1.setText("Scissors II");
+    }//GEN-LAST:event_jLabel5MouseClicked
+
+    private void jLabel10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MouseClicked
+        cardName.setText("Rock III");
+        cardName.setForeground(Color.GREEN);
+        cardName1.setText("Rock III");
+    }//GEN-LAST:event_jLabel10MouseClicked
+
+    private void jLabel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseClicked
+        cardName.setText("Paper III");
+        cardName.setForeground(Color.GREEN);
+        cardName1.setText("Paper III");
+    }//GEN-LAST:event_jLabel8MouseClicked
+
+    private void jLabel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseClicked
+        cardName.setText("Scissors III");
+        cardName.setForeground(Color.GREEN);
+        cardName1.setText("Scissors III");
+    }//GEN-LAST:event_jLabel9MouseClicked
+
+    private void jLabel11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseClicked
+        cardName.setText("Joker");
+        cardName.setForeground(Color.MAGENTA);
+        cardName1.setText("Joker");
+    }//GEN-LAST:event_jLabel11MouseClicked
+
+    private void jLabel12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseClicked
+        cardName.setText("Pip");
+        cardName.setForeground(Color.cyan);
+        cardName1.setText("Pip");
+    }//GEN-LAST:event_jLabel12MouseClicked
 
     /**
      * @param args the command line arguments
@@ -254,6 +422,10 @@ public class ViewDeck extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Background;
     private javax.swing.JLabel Min;
+    private javax.swing.JLabel cardDesc;
+    private javax.swing.JLabel cardDesc1;
+    private javax.swing.JLabel cardName;
+    private javax.swing.JLabel cardName1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;

@@ -1158,6 +1158,17 @@ public class GamePlay extends javax.swing.JFrame {
             turndraw = 3;
             JOptionPane.showMessageDialog(null, "YOU LOST");
             Deck.setEnabled(false);
+            Deck1.setEnabled(false);
+            Hand1.setEnabled(false);
+            Hand2.setEnabled(false);
+            Hand3.setEnabled(false);
+            Hand4.setEnabled(false);
+            Hand5.setEnabled(false);
+            Hand6.setEnabled(false);
+            Hand7.setEnabled(false);
+            Hand8.setEnabled(false);
+            Hand9.setEnabled(false);
+            Hand10.setEnabled(false);
         }
         else if(lifePointOpponent <= 0)
         {
@@ -1165,6 +1176,17 @@ public class GamePlay extends javax.swing.JFrame {
             turndraw = 3;
             JOptionPane.showMessageDialog(null, "YOU WIN");
             Deck.setEnabled(false);
+            Deck1.setEnabled(false);
+            Hand1.setEnabled(false);
+            Hand2.setEnabled(false);
+            Hand3.setEnabled(false);
+            Hand4.setEnabled(false);
+            Hand5.setEnabled(false);
+            Hand6.setEnabled(false);
+            Hand7.setEnabled(false);
+            Hand8.setEnabled(false);
+            Hand9.setEnabled(false);
+            Hand10.setEnabled(false);
         }
     }
     
@@ -1718,7 +1740,7 @@ public class GamePlay extends javax.swing.JFrame {
     private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
         play();
         Draw();
-        playHand.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_java2/Images/GamePlayComponents/Playcard_noval.png")));
+        //playHand.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_java2/Images/GamePlayComponents/Playcard_noval.png")));
     }//GEN-LAST:event_jLabel2MouseClicked
 
     private void Hand6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Hand6MouseClicked
