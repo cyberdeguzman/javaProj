@@ -1263,6 +1263,8 @@ public class GamePlay extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        quitGame = new javax.swing.JLabel();
+        Min = new javax.swing.JLabel();
         Deck = new javax.swing.JLabel();
         Hand1 = new javax.swing.JLabel();
         Hand2 = new javax.swing.JLabel();
@@ -1297,7 +1299,33 @@ public class GamePlay extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(204, 204, 204));
+        setUndecorated(true);
         getContentPane().setLayout(null);
+
+        quitGame.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_java2/Images/Buttons/Exit.png"))); // NOI18N
+        quitGame.setText("  ");
+        quitGame.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                quitGameMouseClicked(evt);
+            }
+        });
+        getContentPane().add(quitGame);
+        quitGame.setBounds(960, 10, 30, 30);
+
+        Min.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_java2/Images/Buttons/Minimize.png"))); // NOI18N
+        Min.setText("  ");
+        Min.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                MinMouseClicked(evt);
+            }
+        });
+        Min.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                MinKeyPressed(evt);
+            }
+        });
+        getContentPane().add(Min);
+        Min.setBounds(920, 10, 30, 30);
 
         Deck.setBackground(new java.awt.Color(153, 204, 255));
         Deck.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_java2/Images/Cards/BackDeckpile.png"))); // NOI18N
@@ -1566,6 +1594,7 @@ public class GamePlay extends javax.swing.JFrame {
         jScrollPane2.setBounds(10, 50, 270, 76);
 
         jLabel3.setBackground(new java.awt.Color(255, 51, 0));
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_java2/Images/Buttons/Disconnect.png"))); // NOI18N
         jLabel3.setText("DISCONNECT");
         jLabel3.setOpaque(true);
         jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -1574,7 +1603,7 @@ public class GamePlay extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(910, 310, 80, 20);
+        jLabel3.setBounds(900, 300, 90, 30);
 
         HealthBorder2.setBackground(new java.awt.Color(255, 255, 255));
         HealthBorder2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_java2/Images/GamePlayComponents/healthborder2.png"))); // NOI18N
@@ -1588,7 +1617,7 @@ public class GamePlay extends javax.swing.JFrame {
         getContentPane().add(bg);
         bg.setBounds(0, 0, 1010, 600);
 
-        setSize(new java.awt.Dimension(1016, 639));
+        setSize(new java.awt.Dimension(1000, 600));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -1723,6 +1752,10 @@ public class GamePlay extends javax.swing.JFrame {
     private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
         // TODO add your handling code here:
         
+        Main_Menu mm = new Main_Menu();
+        mm.setVisible(true);
+        this.dispose();
+        
     }//GEN-LAST:event_jLabel3MouseClicked
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -1733,6 +1766,20 @@ public class GamePlay extends javax.swing.JFrame {
         cardvalup();
 
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void MinMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MinMouseClicked
+        // TODO add your handling code here:
+        this.setExtendedState( GamePlay.ICONIFIED);
+    }//GEN-LAST:event_MinMouseClicked
+
+    private void MinKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_MinKeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_MinKeyPressed
+
+    private void quitGameMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_quitGameMouseClicked
+        // TODO add your handling code here:
+        this.dispose();
+    }//GEN-LAST:event_quitGameMouseClicked
 
     /**
      * @param args the command line arguments
@@ -1786,6 +1833,7 @@ public class GamePlay extends javax.swing.JFrame {
     private javax.swing.JLabel Hand9;
     private javax.swing.JLabel HealthBorder1;
     private javax.swing.JLabel HealthBorder2;
+    private javax.swing.JLabel Min;
     private javax.swing.JLabel PlayerLifePoints;
     private javax.swing.JTextField Status;
     private javax.swing.JTextArea battlogP1;
@@ -1800,6 +1848,7 @@ public class GamePlay extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JLabel opponHand;
     private javax.swing.JLabel playHand;
+    javax.swing.JLabel quitGame;
     private javax.swing.JTextField status2;
     // End of variables declaration//GEN-END:variables
 }

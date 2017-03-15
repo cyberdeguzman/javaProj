@@ -67,10 +67,12 @@ public class Main_Menu extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
         BackGround = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
         getContentPane().setLayout(null);
 
         jTextArea2.setEditable(false);
@@ -78,7 +80,7 @@ public class Main_Menu extends javax.swing.JFrame {
         jTextArea2.setColumns(20);
         jTextArea2.setRows(5);
         getContentPane().add(jTextArea2);
-        jTextArea2.setBounds(0, 0, 1000, 710);
+        jTextArea2.setBounds(-10, -10, 1020, 710);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_java2/Images/Buttons/Exit.png"))); // NOI18N
         jLabel1.setText("  ");
@@ -108,12 +110,12 @@ public class Main_Menu extends javax.swing.JFrame {
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_java2/Images/Buttons/HowToPlay.png"))); // NOI18N
         jLabel3.setText(" ");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(430, 400, 130, 40);
+        jLabel3.setBounds(430, 380, 130, 40);
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_java2/Images/Buttons/MultiPlayer.png"))); // NOI18N
         jLabel5.setText("  ");
         getContentPane().add(jLabel5);
-        jLabel5.setBounds(430, 440, 130, 40);
+        jLabel5.setBounds(430, 460, 130, 40);
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_java2/Images/Buttons/Deck.png"))); // NOI18N
         jLabel6.setText("  ");
@@ -123,7 +125,17 @@ public class Main_Menu extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jLabel6);
-        jLabel6.setBounds(470, 490, 50, 50);
+        jLabel6.setBounds(470, 510, 50, 50);
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_java2/Images/Buttons/SinglePlayer.png"))); // NOI18N
+        jLabel4.setText("jLabel4");
+        jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel4MouseClicked(evt);
+            }
+        });
+        getContentPane().add(jLabel4);
+        jLabel4.setBounds(420, 420, 150, 38);
 
         BackGround.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project_java2/Images/BackGrounds/Main_Menu.png"))); // NOI18N
         BackGround.setText("  ");
@@ -132,7 +144,7 @@ public class Main_Menu extends javax.swing.JFrame {
         getContentPane().add(jScrollPane1);
         jScrollPane1.setBounds(0, 0, 2, 2);
 
-        setSize(new java.awt.Dimension(1016, 639));
+        setSize(new java.awt.Dimension(1000, 600));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -152,7 +164,18 @@ public class Main_Menu extends javax.swing.JFrame {
 
     private void jLabel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseClicked
         deck = 4;
+        ViewDeck vd = new ViewDeck();
+        vd.setVisible(true);
+        Main_Menu mm = new Main_Menu();
+        this.setVisible(false);
     }//GEN-LAST:event_jLabel6MouseClicked
+
+    private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
+        GamePlay gp = new GamePlay();
+        gp.setVisible(true);
+        this.setVisible(false);
+        
+    }//GEN-LAST:event_jLabel4MouseClicked
 
     /**
      * @param args the command line arguments
@@ -195,6 +218,7 @@ public class Main_Menu extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JScrollPane jScrollPane1;
